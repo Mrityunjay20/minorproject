@@ -1,0 +1,17 @@
+<%- include('partials/header'); -%>
+<h1 class="login-heading" style="user-select: none;" >Reset Password</h1>
+<div class="login-form">
+    <form method="post" action="">
+        <label for="loginAs">ID of:</label>
+        <select id="loginAs" required name="loginAs">
+            <option value="user">Patient</option>
+            <option value="admin">Doctor</option>
+            <option value="admin">Chemist</option>
+        </select><br><br>
+        
+        <input type="email" style="width: 100%; margin: 5px 20px 10px 0px;" placeholder="E-Mail" required id="email" name="email"><br>
+        <br>
+        <input type="submit" class="login_button" style="width: 200px; height:50px" value="Reset">
+    </form>
+</div>
+<%- include('partials/footer'); -%>

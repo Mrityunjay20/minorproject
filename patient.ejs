@@ -1,0 +1,14 @@
+<%- include('partials/header'); -%>
+
+
+
+<h1 style="color: #ffffff; font-family: 'Roboto Condensed', sans-serif; text-align: center; font-size: 30px;">Patient</h1>
+<p style="color: #ffffff; font-family: 'Roboto Condensed', sans-serif; text-align: center; font-size: 30px;">E-Mail: <%= email %> </p>
+<p style="color: #ffffff; font-family: 'Roboto Condensed', sans-serif; text-align: center; font-size: 30px;">Unique Id: <%= unique %> </p>
+<h1 style="color: #ffffff; font-family: 'Roboto Condensed', sans-serif; text-align: center; font-size: 60px;">Previous Prescriptions</h1>
+<ul style="list-style-type: none; padding: 0; margin-bottom: 300px; width: 70%;">
+    <% input.forEach(function(item) { %>
+      <li style="background-color: #f1f1f1; padding: 10px; margin-bottom: 10px; margin-left:45%"><%= item %></li>
+    <% }); %>
+  </ul>
+<%- include('partials/footer'); -%>

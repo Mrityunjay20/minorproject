@@ -1,0 +1,19 @@
+<%- include('partials/header'); -%>
+<h1 class="login-heading" style="user-select: none;" >SIGN IN</h1>
+<div class="login-form">
+    
+    <form action="/logincheck" method="post">
+        <label for="loginAs">Login As:</label>
+        <select id="loginAs" aria-placeholder="select" required name="loginAs">
+            <option value="user" disabled>Select one</option>
+            <option value="Patient">Patient</option>
+            <option value="Doctor">Doctor</option>
+            <option value="Chemist">Chemist</option>
+        </select><br><br>
+        <input style="width: 100%; margin: 5px 20px 10px 0px;" type="email" required placeholder="E-Mail" name="emailz"><br>
+        <input style="width: 100%; margin: 5px 20px 10px 0px;"  type="password" required placeholder="Password" name="passwordz"><br>
+        <a href="/reset_password" style="margin: 5px 20px 10px 0px;">Forgot Password?</a><br>
+        <button class="login_button" style="width: 200px; height:50px" type="submit">Submit</button><br>
+    </form>
+</div>
+<%- include('partials/footer'); -%>

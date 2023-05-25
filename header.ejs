@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>MediCrypt</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@500&family=Mukta&family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+ 
+<body>
+
+<div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <div class="nav-title">
+       <a href="/" style="color:#ffffff; text-decoration: none;"> Medi<span style="color: #05F000;">Crypt</span></a>
+      </div>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    <div class="nav-links">
+      <% 
+        if (signinstatus) { %>
+          <a href="/signout">Signout</a>
+      <% } 
+      else{%>
+          <a href="/login">Signin</a>
+      <% } 
+      %>
+    </div>
+  </div>
+    <div class="container">

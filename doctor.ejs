@@ -1,0 +1,14 @@
+<%- include('partials/header'); -%>
+
+
+<h1 style="color: #ffffff; font-family: 'Roboto Condensed', sans-serif; text-align: center; font-size: 60px;">Doctor</h1>
+<a href="/doctor_create"><button class="login_button" style="width: 200px; height:50px; margin-left:43.5%;" type="submit">Create prescription</button></a><br>
+<br><br>
+<h1 style="color:#FFFFFF; margin-left: 49%;">MJ</h1><P style="color:#ffffff ; margin-left: 49%;">123456</P>
+<ul style="list-style-type: none; padding: 0; margin-bottom: 300px; width: 70%;">
+    <% input.forEach(function(item) { %>
+      <li style="background-color: #f1f1f1; padding: 10px; margin-bottom: 10px; margin-left:45%"><%= item %></li>
+    <% }); %>
+  </ul>
+
+<%- include('partials/footer'); -%>
